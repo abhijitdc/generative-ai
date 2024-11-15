@@ -35,12 +35,12 @@
     }, time + 1000);
   }
 
-  onMount(() => {
+  //onMount(() => {
     // Write and send sample questions to chatbot
-    send_input("Hello", 2000);
-    send_input("Does the Pixel 7 Pro support fast charging?", 6000);
-    send_input("Which colors is the Pixel Watch available in?", 11000);
-  });
+    //send_input("Hello", 2000);
+    // send_input("Does the Pixel 7 Pro support fast charging?", 6000);
+    // send_input("Which colors is the Pixel Watch available in?", 11000);
+ // });
 </script>
 
 <Navbar let:hidden let:toggle class="bg-[#B1D6FC]">
@@ -53,11 +53,6 @@
     <NavLi href="/" active={true}>Home</NavLi>
     <NavLi href="https://cloud.google.com/generative-ai-app-builder/docs/introduction"
       >Documentation</NavLi>
-    <NavLi href="https://codelabs.developers.google.com/codelabs/vertex-ai-conversation"
-      >Codelab</NavLi>
-    <NavLi
-      href="https://github.com/GoogleCloudPlatform/generative-ai/tree/main/conversation/chat-app"
-      >Source code</NavLi>
   </NavUl>
 </Navbar>
 
@@ -81,8 +76,7 @@
         about the content.
 
         <Heading tag="h5" class="my-2 mt-6">Try it yourself!</Heading>
-        Ask the chatbot on the right about products in the Google Store, such as the Pixel Phone, Pixel
-        Watch, or Pixel Tablet.
+        Ask the chatbot on the right about services like, How to get a digital driver license? How to apply for hot water rebate?
 
         <img
           src="how-chat-works.png"
@@ -103,16 +97,17 @@
         <script
           src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
         <df-messenger
-          project-id="your-project-id"
-          agent-id="4e166055-7ed3-4ffb-abf6-ee0d75abf823"
+          oauth-client-id=""
+          project-id=""
+          agent-id=""
           language-code="en"
           storage-option="none"
           class="drop-shadow-lg"
           max-query-length="-1">
           <df-messenger-chat
-            chat-title="Google Store - Vertex AI Conversation"
+            chat-title="Demo - Vertex AI Conversation"
             bot-writing-text="..."
-            placeholder-text="Ask me anything about the Google Store..." />
+            placeholder-text="Ask me anything about..." />
         </df-messenger>
       </div>
     </div>

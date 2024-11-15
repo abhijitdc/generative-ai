@@ -1,12 +1,12 @@
 {
   "projects": {
-    "default": "your-project-id"
+    "default": "llm-palooza"
   },
   "targets": {
-    "your-project-id": {
+    "llm-palooza": {
       "hosting": {
-        "your-firebase-app-name": [
-          "your-firebase-app-name"
+        "llm-palooza": [
+          "llm-palooza"
         ]
       }
     }
